@@ -3,8 +3,8 @@ function produceDrivingRange(blockRange) {
     if (blocks-blockRange > 0) {
       return `within range by {blocks-blockRange}`;
     } else {
-      
-      return '${Math.abs(blocks-blockRange)} blocks out of range';
+      let range= $Math.abs(blocks-blockRange);
+      return '${range} blocks out of range';
     }
   };
 }
