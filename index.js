@@ -1,1 +1,3 @@
-function 
+function produceDrivingRange(range) {
+  
+}
