@@ -1,7 +1,7 @@
 function produceDrivingRange(blockRange) {
   return function(blocks) {
     if (blocks-blockRange > 0) {
-      return `$(blocks-blockRange;
+      return `within range by $(blocks-blockRange)`;
     } else {
       return false;
     }
