@@ -3,7 +3,7 @@ function produceDrivingRange(blockRange) {
     if (blocks-blockRange > 0) {
       return `within range by $(blocks-blockRange)`;
     } else {
-      return false;
+      return '$(blocks-blockRange) blocks out of range';
     }
   };
 }
