@@ -7,7 +7,7 @@ function produceDrivingRange(blockRange) {
     if (range <= blockRange) {
       return `within range by ${range}`;
     } else {
-      let posRange= Math.abs(range);
+      let posRange= Math.abs(range-blockRange);
       return `${posRange} blocks out of range`;
     }
   };
