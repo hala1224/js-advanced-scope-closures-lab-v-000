@@ -1,10 +1,14 @@
 function produceDrivingRange(blockRange) {
-  return function(blocks) {
-    if (blocks-blockRange > 0) {
-      return `within range by {blocks-blockRange}`;
+  return function(blockStart, blockEnd) {
+    let start=parseFloat(blockStart);
+    let end=parseFloat(blockEnd);
+    let range= end - start;
+
+    if (range <= blockRange) {
+      return `within range by ${range}`;
     } else {
-      let range= Math.abs(blocks-blockRange);
-      return range, ' blocks out of range';
+      let posRange= Math.abs(range);
+      return `${posRange} blocks out of range`;
     }
   };
 }
